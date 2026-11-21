@@ -16,7 +16,7 @@ Resource names describe simulated components, not live services.
 | Meadow tenant | `eks-tenant/clients/meadow` | test, prod | Same module with optional database/cache disabled |
 | Demo cluster | `eks-cluster/config` | test, prod | config/module split, dependency ordering, input validation |
 
-Use repository `pevrenhq/plinth-examples`, branch `main`, binary **tofu**,
+Use repository `vennacor/plinth-examples`, branch `main`, binary **tofu**,
 and your configured runner image. No clone token is required for this public repo.
 `bootstrap.exs` registers these templates and environments in an existing Plinth
 installation. It adds only missing records, preserves edits, and never starts runs.
