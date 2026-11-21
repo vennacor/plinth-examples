@@ -18,7 +18,7 @@ ensure = fn schema, identity, attrs, create ->
   end
 end
 {:ok, ids} = Repo.transaction(fn ->
-  repo = ensure.(Repository, [owner: "pevrenhq", name: "plinth-examples"], %{default_branch: "main"}, &Catalog.create_repository/1)
+  repo = ensure.(Repository, [owner: "vennacor", name: "plinth-examples"], %{default_branch: "main"}, &Catalog.create_repository/1)
   for {name, path, key, default, prod} <- [
     {"Aurora tenant", "eks-tenant/clients/aurora", "release", "v1-demo", "v1-stable"},
     {"Meadow tenant", "eks-tenant/clients/meadow", "release", "v1-demo", "v1-stable"},
